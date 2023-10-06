@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <style>
+        section:nth-child(1) {
+            width: 90vw;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section:nth-child(1) > div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        section:nth-child(2) {
+            margin-top: 40px;
+            width: 90vw;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        section:nth-child(2) > div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        section:nth-child(3) {
+            margin-top: 40px;
+            width: 90vw;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        section:nth-child(3) > div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        section:nth-child(3) > div:nth-child(1) {
+            align-self: flex-start;
+        }
+
+        section:nth-child(3) > div:nth-child(2) {
+            align-self: center;
+        }
+
+        section:nth-child(3) > div:nth-child(3) {
+            align-self: flex-end;
+        }
+
+    /*    Include in Flex Items*/
+    /*    Flex- Grow (Grow factor)*/
+    /*    Flex- Shrink (Akulana factor)*/
+    /*    Flex- Basis (Width factor)*/
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

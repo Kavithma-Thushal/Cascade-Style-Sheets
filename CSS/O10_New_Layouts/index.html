@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Layouts</title>
+    <style>
+        /*<!--First option with inline-block level-->*/
+        /*section{*/
+        /*    width: 90vw;*/
+        /*    height: 300px;*/
+        /*    border: 2px solid black;*/
+        /*    font-size: 0;*/
+        /*}*/
+
+        /*section>div{*/
+        /*    width: calc(100%/3);*/
+        /*    height: 100%;*/
+        /*    display: inline-block;*/
+        /*    border: 1px solid red;*/
+        /*    box-sizing: border-box;*/
+        /*}*/
+
+        /*    With Position */
+        /*section{*/
+        /*    width: 90vw;*/
+        /*    height: 300px;*/
+        /*    border: 2px solid black;*/
+        /*    position: relative;*/
+        /*}*/
+
+        /*section>div{*/
+        /*    width: calc(100%/3);*/
+        /*    height: 100%;*/
+        /*    border: 1px solid red;*/
+        /*    position: absolute;*/
+        /*}*/
+
+        /*section>div:nth-child(1){*/
+        /*    left: 0;*/
+        /*}*/
+
+        /*section>div:nth-child(2){*/
+        /*    !*margin: auto;*!*/
+        /*    !*left: 0;*!*/
+        /*    !*right: 0;*!*/
+
+        /*    left: calc((100%/3));*/
+        /*}*/
+
+        /*section>div:nth-child(3){*/
+        /*right: 0;*/
+        /*}*/
+
+
+        /*With New Layouts*/
+        /*flex*/
+        /*grid*/
+
+        section {
+            width: 90vw;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        section > div {
+            width: calc(100% / 3);
+            height: 100%;
+            border: 1px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

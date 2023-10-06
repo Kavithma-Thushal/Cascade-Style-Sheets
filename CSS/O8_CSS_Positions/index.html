@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            left: 100px;
+            right: 10px;
+            top: 10px;
+            bottom: 10px;
+        }
+
+        /*
+        Positions which can be assigned for html
+        elements
+        01.Static (Default)
+        (Decide using element type (block/inline))
+        02. Relative Position
+        03. Absolute Position
+        04. Fixed Position
+        05. Sticky Position
+        */
+    </style>
+</head>
+<body>
+<div></div>
+<div style="background: green;"></div>
+
+
+<!--So why do we need position.? what is a position in css-->
+<!--We need to know about positions when we need to move a html element to a new position (assign a new position)-->
+
+
+<!--static position-->
+<!--This is the default position that we have for elements-->
+<!--this static position is defined by based on the element type-->
+<!--Inline and Block level elements-->
+
+<!--Relative Position-->
+<!--If some-one wants to move an element left,right,top,bottom from where it was positioned without breaking the current flow of the structure
+then we can use this relative positioning-->
+
+<!--Absolute Position-->
+<!--So if someone wants to move an element or positioned a child in relate with its one of the parents then this
+absolute positioning can be used-->
+<!--In here we need to remember by applying relative it will remove that element from the normal flow of the document,
+which means it will change the normal flow-->
+<!--Secondly we should remember after applying left,right,top and bottom properties to the absolute element
+we need to have a non-static positioned parent-->
+<!--Otherwise it will use the viewport to make its position-->
+
+<!--Fixed Position-->
+<!--Will behave same as the absolute positioning, but it will be positioned
+according to the viewport and it will be fixed and will not move with
+the normal content-->
+
+<!--Sticky Position-->
+<!--Mix version of relative and fixed positions. will maintain a fixed position
+in a container until its parent scroll point is over-->
+
+
+</body>
+</html>

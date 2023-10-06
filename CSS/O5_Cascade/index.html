@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade</title>
+    <style>
+
+        *{
+            color: black;
+        }
+        h1{
+            color: blue;
+        }
+
+        .h1Class{
+            color: orange;
+        }
+
+        [id]{
+            color: brown!important;
+        }
+
+        :first-child{
+            color: green;
+        }
+
+        #h1ID{
+            color: deeppink;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 id="h1ID" class="h1Class" style="color:red;">So What is Cascade.?</h1>
+
+
+<!--01. red-->
+<!--02. deeppink-->
+<!--03. green-->
+<!--04. Brown-->
+<!--05. Orange-->
+<!--06. Blue-->
+<!--07. Black-->
+
+</body>
+</html>

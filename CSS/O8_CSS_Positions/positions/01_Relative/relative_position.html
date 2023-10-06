@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions_ Default Positions & Relative Position</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <style>
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to left,red,orange);
+            border-radius: 100%;
+            display: inline-block;
+        }
+        img{
+            width: 200px;
+        }
+
+        /*body>img:first-child{*/
+        /*    !*so while it's in static position you can't use this*!*/
+        /*    top: 50px;*/
+        /*}*/
+
+        body>img:first-child{
+            position: relative;
+            /*this will from top whithout affecting the current flow*/
+            top: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+<img src="../../assets/images/car.webp" alt="Car">
+<img src="../../assets/images/walk.gif" alt="Walking Man">
+
+<div></div>
+<img src="../../assets/images/tree.gif" alt="Tree">
+
+</body>
+</html>

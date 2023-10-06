@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout</title>
+    <style>
+    section{
+        width: 90vw;
+        height: 300px;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    section>div{
+        /*width: calc(100%/4);*/
+        /*height: 100%;*/
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+    }
+    </style>
+</head>
+<h1>Flex Layout</h1>
+<p>This can be used to create row columns in an easy way</p>
+<body>
+
+<!--flex container-->
+<section>
+<!--    Flex items-->
+    <div>A</div>
+<!--    width-manage by content-->
+<!--    height - manage by container height-->
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</section>
+
+
+</body>
+</html>

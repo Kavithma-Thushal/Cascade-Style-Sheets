@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case One</title>
+    <link rel="stylesheet" href="../assets/css/8.0.1_normalize.css">
+    <style>
+        body > section {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body > section:nth-child(1) {
+            background: red;
+            left: 0;
+            top: 0;
+        }
+
+        body > section:nth-child(2) {
+            background: orange;
+            bottom: 0;
+            left: 0;
+        }
+
+        body > section:nth-child(3) {
+            background: green;
+            top: 0;
+            right: 0;
+        }
+
+        body > section:nth-child(4) {
+            background: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+
+        body > section > section {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > section > section > div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) > div {
+            width: 150px;
+            height: 150px;
+            background: red;
+            border-radius: 150px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) ~ div {
+            width: 150px;
+            height: 150px;
+            background: white;
+            position: absolute;
+        }
+
+        body > div:nth-child(5) ~ div:nth-child(6) {
+            right: 0;
+            top: 0;
+        }
+
+        body > div:nth-child(5) ~ div:nth-child(7) {
+            right: 0;
+            bottom: 0;
+        }
+
+        body > div:nth-child(5) ~ div:nth-child(8) {
+            left: 0;
+            bottom: 0;
+        }
+
+        body > div:nth-child(5) ~ div:nth-child(9) {
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+            height: 75px;
+        }
+
+        body > div:nth-child(5) ~ div:nth-child(10) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) ~ div:nth-child(11) {
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <section>
+        <div></div>
+    </section>
+</section>
+<section>
+    <section>
+        <div></div>
+    </section>
+</section>
+<section>
+    <section>
+        <div></div>
+    </section>
+</section>
+<section>
+    <section>
+        <div></div>
+    </section>
+</section>
+
+<div>
+    <div></div>
+</div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+</html>

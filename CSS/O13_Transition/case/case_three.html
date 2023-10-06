@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/font-awsome/css/all.css">
+    <link rel="stylesheet" href="../assets/css/8.0.1_normalize.css">
+    <style>
+        body{
+            background-color: #4bb6c0;
+        }
+        section {
+            width: 400px;
+            height: 400px;
+            border: 20px solid white;
+            background-color: blue;
+            border-radius: 100%;
+            border-top: 20px solid deeppink;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        section>h1{
+            color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+        }
+        section:hover{
+            transform: rotate(360deg);
+            transition: 2s all;
+        }
+
+        section:hover h1{
+            transform: rotate(-360deg);
+            transition: 2s all;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>RWAD</h1>
+</section>
+</body>
+</html>

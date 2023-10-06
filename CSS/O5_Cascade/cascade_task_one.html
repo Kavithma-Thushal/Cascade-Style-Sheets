@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade Task One</title>
+    <style>
+        /*10*/
+        [id]{
+            color: gray;
+        }
+
+        *{
+            color: deeppink;
+        }
+        /*100*/
+        #a{
+            color: red;
+        }
+
+        /*10*/
+        .b{
+            color: green;
+        }
+
+        /*10*/
+        [class]{
+            color: coral;
+        }
+
+        /*1*/
+        p{
+            color: blueviolet;
+        }
+
+        /*1*/
+        ::first-line{
+            color: aqua;
+        }
+
+        /*10*/
+        :first-child{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+<p id="a" class="b" style="color: orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse labore laudantium libero mollitia nesciunt
+    numquam quas tempore temporibus. At cupiditate eos error facere nam, officiis soluta veniam voluptas
+    voluptatibus.</p>
+</body>
+</html>
+
+<!--orange-->
+<!--red-->
+<!--purple-->
+<!--coral-->
+<!--green-->
+<!--gray-->
+<!--aqua-->
+<!--blueviolet-->
+<!--deeppink-->
+
+
+<!--orange 1000-->
+<!--red 100-->
+<!--purple 10-->
+<!--coral 10-->
+<!--green 10-->
+<!--gray 10-->
+<!--aqua 1-->
+<!--blueviolet 1-->
+<!--deeppink 0-->
+
+

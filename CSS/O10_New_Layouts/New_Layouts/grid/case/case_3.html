@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Merge with Images</title>
+    <style>
+        section {
+          width: 90vw;
+          height: 600px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin:auto;
+
+          display: grid;
+          grid-template-rows: repeat(3,1fr);
+          grid-template-columns: repeat(4,1fr);
+          gap:10px ;
+        }
+
+        section>div{
+          box-shadow: 1px 4px 5px 0px #1a1616;
+        }
+
+        section>div:nth-child(1){
+          grid-column: 1/3;
+          grid-row: 1/2;
+          background: url("../../../assets/images/img_1.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+        section>div:nth-child(2){
+          background: url("../../../assets/images/img_2.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+        section>div:nth-child(3){
+          grid-column: 4/5;
+          grid-row: 1/3;
+          background: url("../../../assets/images/img_3.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+        section>div:nth-child(4){
+          background: url("../../../assets/images/img_4.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+        section>div:nth-child(5){
+          background: url("../../../assets/images/img_5.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+        section>div:nth-child(6){
+          background: url("../../../assets/images/img_6.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+        section>div:nth-child(7){
+          background: url("../../../assets/images/img_7.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+
+        section>div:nth-child(8){
+          grid-column: 2/5;
+          grid-row: 3/4;
+          background: url("../../../assets/images/img_6.png");
+          background-position: center;
+          background-size:cover;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

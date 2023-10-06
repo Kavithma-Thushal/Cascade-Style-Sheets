@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traversing Using CSS</title>
+    <style>
+        body>section>section:nth-child(2)>section>div>ul:last-child>li:nth-child(2){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <section>
+        <div>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+            <ol>
+                <li>IJSE</li>
+                <li>GDSE</li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <section>
+            <div>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+                <ul>
+                    <li>A</li>
+                    <li>B- Change the Font Color using traversing</li>
+                    <li>C</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section>
+        <section>
+            <section>
+                <div>
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </section>
+</section>
+
+</body>
+</html>

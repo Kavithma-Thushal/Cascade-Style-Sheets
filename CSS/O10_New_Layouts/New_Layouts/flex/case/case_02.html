@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 02</title>
+    <style>
+        section:nth-child(1) {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+
+            /*make a flex container*/
+            display: flex;
+
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+            /*flex-direction: row;*/
+            /*flex-direction: row-reverse;*/
+
+            /*flex-wrap: nowrap; default*/
+            /*flex-wrap: wrap;*/
+
+            /*Manage Y axis (Cross Axis)*/
+            /*align-items: center;*/
+            /*align-items: flex-end;*/
+            /*align-items: flex-start;*/
+
+            /*Manage main axis (X)*/
+            /*justify-content: center;*/
+            /*justify-content: flex-start;*/
+            /*justify-content: flex-end;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-evenly;*/
+            /*justify-content: space-around;*/
+        }
+
+        section:nth-child(1) > div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+
+            /*unit-less width managing factor*/
+            /*flex-grow: 1;*/
+
+            /*Manage container overflow factor*/
+            flex-shrink: 0; /*(default 1 - on)*/
+            /*(default 0 - off)*/
+
+            /*Manage Width*/
+            flex-basis: 200px;
+
+            /*if shrink is off then flex items
+            can overflow the container width*/
+        }
+
+        section:nth-child(1) > div:nth-child(1) {
+            /*flex-grow: 1;*/
+            order: 2;
+        }
+
+        section:nth-child(1) > div:nth-child(2) {
+            /*flex-grow: 2;*/
+            order: 1;
+        }
+
+        section:nth-child(1) > div:nth-child(3) {
+            /*flex-grow: 1;*/
+
+            /*Can manage the order*/
+            order: 3;
+        }
+
+        /*    */
+
+
+        /*    Include in Flex Items*/
+        /*    Flex- Grow (Grow factor)*/
+        /*    Flex- Shrink (Akulana factor)*/
+        /*    Flex- Basis (Width factor)*/
+    </style>
+</head>
+<body>
+<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</section>
+</body>
+</html>

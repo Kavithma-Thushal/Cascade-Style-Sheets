@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/font-awsome/css/all.css">
+    <link rel="stylesheet" href="../assets/css/8.0.1_normalize.css">
+    <style>
+        section{
+            width: 300px;
+            height: 200px;
+            /*border: 2px solid red;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            right: 250px;
+        }
+
+        section>div{
+            height: 50px;
+            width: 300px;
+            /*border: 2px solid green;*/
+            background-color: purple;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            left: 0px;
+            right: 0px;
+            transition: all 2s;
+            position: relative;
+            box-shadow: 1px 2px 20px 2px black;
+        }
+        section>div>h2,p{
+            margin: 0;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        section>div:hover{
+            position: relative;
+            left: 250px;
+            cursor: pointer;
+            transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+<section>
+  <div>
+    <h2>Menu One</h2>
+    <p><i class="fa-solid fa-house"></i></p>
+  </div>
+
+    <div>
+        <h2>Menu Two</h2>
+        <p><i class="fa-solid fa-user"></i></p>
+    </div>
+</section>
+</body>
+</html>

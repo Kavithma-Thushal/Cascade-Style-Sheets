@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <!--before you trying to use media queries you should apply meta viewport tag-->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <style>
+        h1 {
+            color: red;
+        }
+
+        /*all - any device*/
+        /*this is called as a at-rule in css*/
+        /*This is just a condition similer to
+         if statement*/
+        /*@media print {*/
+        /*    h1 {*/
+        /*        color: green;*/
+        /*    }*/
+        /*}*/
+
+        /*0-325*/
+        @media all and (max-width: 320px) {
+            h1 {
+                color: green;
+            }
+        }
+
+        /*320 - 425*/
+        /*0 - 425*/
+        /*this will be activated only between 230 - 425*/
+        @media all and (min-width: 320px) and (max-width: 425px) {
+            h1 {
+                color: blue;
+            }
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<h1>Media Queries</h1>
+
+</body>
+</html>

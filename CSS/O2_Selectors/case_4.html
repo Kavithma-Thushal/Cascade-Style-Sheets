@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+
+            /*Pseudo classes make selection
+            upone the behaviours of the elements*/
+
+            /*select if the mouse is over the h1*/
+            /*otherwise it wont apply*/
+            /*h1:hover{*/
+            /*    color: red;*/
+            /*}*/
+
+            /*li:first-child{*/
+            /*    color: red;*/
+            /*}*/
+
+            /*li:last-child{*/
+            /* color: orange;*/
+            /*}*/
+
+            /*li:first-child{*/
+            /*    color: green;*/
+            /*}*/
+
+            /*li:nth-child(3){*/
+            /*    color: yellow;*/
+            /*}*/
+
+            /*li:last-child{*/
+            /*    color: deeppink;*/
+            /*}*/
+
+            /*h2:nth-child(3){*/
+            /*    color: red;*/
+            /*}*/
+
+            h3:before{
+                content: "😁";
+            }
+            h3:after{
+              content: "🤓😺";
+            }
+
+            button:active{
+                background: blue;
+            }
+
+            a:visited{
+                color: red;
+            }
+    </style>
+</head>
+<body>
+<h1>Select and change my colors if the mouse is over the h1</h1>
+<p>lore</p>
+<h2>DDDDDDDDDD</h2>
+
+<p>Select the first last and 3rd list of the element</p>
+<ul>
+    <li>A</li>
+    <li>A</li>
+    <li>A</li>
+    <li>A</li>
+    <li>A</li>
+</ul>
+
+<h3>select and Input two imo to the start and end of this H3</h3>
+
+<!--Change the color of the link to red after it is visited-->
+<a href="https://ijse.lk" target="_blank">Visited</a>
+<a href="https://google.com" target="_blank">Visited</a>
+<button>Test</button>
+
+<section>
+    <h2>A</h2>
+    <h2>B - Select</h2>
+    <h2>C</h2>
+</section>
+<h3>DD</h3>
+<section>
+    <h2>A</h2>
+    <h2>B - Select</h2>
+    <h2>C</h2>
+</section>
+
+</body>
+</html>

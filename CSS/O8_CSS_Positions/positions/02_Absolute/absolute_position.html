@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions_ Absolute Positions</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to left, red, orange);
+            border-radius: 100%;
+            position: absolute;
+            right: 400px;
+            top: 50px;
+            margin:auto;
+            display: inline-block;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        body > img:first-child {
+            position: absolute;
+            bottom: -60px;
+        }
+        body > img:nth-child(2) {
+            position: absolute;
+            bottom: -10px;
+            left:300px;
+        }
+
+        /*how to move to end*/
+        img:last-of-type {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        /*!*how to center*!*/
+        /*img:last-of-type {*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    bottom: 0;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    margin:auto;*/
+        /*}*/
+
+
+    </style>
+</head>
+<body>
+<img src="../../assets/images/car.webp" alt="Car">
+<img src="../../assets/images/walk.gif" alt="Walking Man">
+
+<div></div>
+<img src="../../assets/images/tree.gif" alt="Tree">
+
+</body>
+</html>

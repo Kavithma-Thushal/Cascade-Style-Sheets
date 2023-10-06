@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <style>
+        main {
+            width: 800px;
+            height: 500px;
+            border: 2px solid black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main > section {
+            width: calc(100% * 5);
+            height: 100%;
+            /*border: 2px solid red;*/
+            display: flex;
+
+            animation-name: slide_me;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        main > section:hover{
+            animation-play-state: paused;
+
+        }
+
+        main > section > div {
+            flex-grow: 1;
+            height: 100%;
+            /*border: 2px solid green;*/
+        }
+
+        main > section > div:nth-child(1) {
+            /*background: red;*/
+            background: url("../assets/bac/bac_1.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(2) {
+            /*background: red;*/
+            background: url("../assets/bac/bac_2.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(3) {
+            /*background: red;*/
+            background: url("../assets/bac/bac_3.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(4) {
+            /*background: red;*/
+            background: url("../assets/bac/bac_4.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(5) {
+            /*background: red;*/
+            background: url("../assets/bac/bac_5.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slide_me {
+            0% {
+                transform: translateX(0px);
+            }
+            25% {
+                transform: translateX(calc((-100%/5)*1));
+            }
+            50% {
+                transform: translateX(calc((-100%/5)*2));
+            }
+            75% {
+                transform: translateX(calc((-100%/5)*3));
+            }
+            100% {
+                transform: translateX(calc((-100%/5)*4));
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

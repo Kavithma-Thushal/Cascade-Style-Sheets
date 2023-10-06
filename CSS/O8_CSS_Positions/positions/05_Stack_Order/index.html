@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack Order</title>
+    <!--If you work with z-index for stacking making sure to have non-static position
+    otherwise it won't work-->
+    <style>
+        div {
+            width: 400px;
+            height: 200px;
+        }
+
+        div:nth-child(1) {
+            background: red;
+            position: relative;
+            top: 10px;
+
+        }
+
+        div:nth-child(2) {
+            background: green;
+
+
+        }
+
+        div:nth-child(3) {
+            background: orange;
+
+
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    <style>
+        h1{
+            color: red;
+            /*track the key frame*/
+            animation-name: anima;
+
+            /*Animation duration*/
+            animation-duration: 5s;
+
+            /*How many times animations should run*/
+            animation-iteration-count: 1;
+            /*if you want to run without stop*/
+            /*animation-iteration-count: infinite;*/
+
+            /*by using this you can manage the direction of the animation*/
+            /*animation-direction: normal;*/
+
+            /*will start from the last keyframe always*/
+            /*animation-direction: reverse;*/
+
+            /*start with first key frame and then will continue with the stopping end*/
+            /*animation-direction: alternate;*/
+
+            /*same as above, but will start from the last frame*/
+            /*animation-direction: alternate-reverse;*/
+
+
+            /*will wait 2s before starting the animation*/
+            animation-delay: 5s;
+
+            /*before start the animation first frame will be added*/
+            /*animation-fill-mode: backwards;*/
+
+            /*at the end of the animation last frame will be added*/
+            /*animation-fill-mode: forwards;*/
+
+            /*before starting the animation the first frame will
+            be added and then at the end of the animation last frame will be added*/
+            animation-fill-mode: both;
+
+            animation-timing-function: linear;
+
+
+            position: relative;
+            left: 0;
+
+        }
+
+        /*This is how you can write down css frames*/
+        /*@keyframes anima {*/
+        /*    from{*/
+        /*        color: blue;*/
+        /*        left: 0;*/
+        /*    }*/
+        /*    to{*/
+        /*        color: deeppink;*/
+        /*        left: 100px;*/
+        /*    }*/
+        /*}*/
+
+        /*if you want to create more frames then you can create more from 0 - 100*/
+        @keyframes anima {
+            0%{
+                color: blue;
+                left: 0;
+            }
+            50%{
+                color: orange;
+                left: 200px;
+            }
+            100%{
+                color: yellow;
+                left: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Animations</h1>
+<p>CSS animations make it possible to animate transitions from one CSS style configuration to another.<br>
+    Animations consist of two components, a style describing the CSS animation and a set of keyframes
+    that indicate the start and end states of the animation's style, as well as possible intermediate
+    waypoints.</p>
+
+<ul>
+    <li>animation-name</li>
+    <li>animation-duration</li>
+    <li>animation-timing-function</li>
+    <li>animation-delay</li>
+    <li>animation-iteration-count</li>
+    <li>animation-direction
+    <ul>
+        <li>(reverse/alternate,alternate-reverse) (normal default)</li>
+    </ul>
+    </li>
+    <li>animation-fill-mode
+    <ul>
+        <li>(Configures what values are applied by the animation before and after it is executing.)</li>
+    </ul>
+    </li>
+    <li>animation-play-state</li>
+</ul>
+</body>
+</html>

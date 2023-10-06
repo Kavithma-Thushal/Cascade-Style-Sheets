@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade Task Three</title>
+    <style>
+
+        /*1 + 100 + 1 + + 10 + 100 + 1 + 1 + 1 + 1 = 216*/
+        body#body>section.mainClass#main>section>div+div>h1{
+            color: red;
+        }
+
+        /*1 + 1 + 1 + 1 + 1 + 1 =6*/
+        body>section>section>div+div>h1{
+            color: deeppink;
+        }
+
+        /*1 + 10 +     100 + 1 +   100 + 10 +       1 +    10 +    100 + 1 + 10 +        100 +     1 + 100 +     10 +          1 + 100 +     10 = 666*/
+        body.bodyClass#body>section#main.mainClass>section.subClass#sub>div.firstDivClass#firstDiv+div#secondDiv.secondDivClass>h1#selectedH1.selectH1Class{
+            color: indigo;
+        }
+
+        /*1 + 10 +    100 + 1 +     100 + 1 +    10 +     1 + 10 +          1 + 100 +      1 + 100 + 10 =   446*/
+        body.bodyClass#body>section#main>section.subClass>div.firstDivClass+div#secondDiv>h1#selectedH1.selectH1Class{
+            color: skyblue !important;
+        }
+
+        /*100*/
+        #selectedH1{
+            color: magenta!important;
+        }
+
+    </style>
+</head>
+<body class="bodyClass" id="body">
+<section class="mainClass" id="main">
+    <section class="subClass" id="sub">
+        <div class="firstDivClass" id="firstDiv">
+
+        </div>
+        <div class="secondDivClass" id="secondDiv">
+            <h1 class="selectH1Class" id="selectedH1" style="color: green">Hello I am Here</h1>
+        </div>
+    </section>
+</section>
+
+</body>
+</html>
+
+<!--Cascade Order-->
+<!--green : 1000-->
+<!--indigo : 666-->
+<!--skyblue : 446-->
+<!--red : 216-->
+<!--magenta : 100-->
+<!--deeppink : 6-->
+
+
+
+

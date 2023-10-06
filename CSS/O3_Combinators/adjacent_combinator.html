@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adjacent Combinator</title>
+    <style>
+        /*select h1 if its just after a
+         paragraph on the same root*/
+        p+h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Outer</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consequuntur culpa deleniti deserunt dolore, dolorem est facere placeat quas rerum sint soluta temporibus vero vitae. Asperiores, tempora, totam! Amet!</p>
+<h1>Outer</h1>
+<h1>Outer</h1>
+<p>ddddd</p>
+<h1>Outer</h1>
+<h1>Outer</h1>
+<section>
+    <h1>DDDD</h1>
+    <div>
+        <p>ddddd</p>
+        <h1>Hello</h1>
+    </div>
+    <h1>I am inside div</h1>
+</section>
+</body>
+</html>

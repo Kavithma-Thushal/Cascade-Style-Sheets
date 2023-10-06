@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/O10_New_Layouts.iml" filepath="$PROJECT_DIR$/O10_New_Layouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O11_SVG/O11_SVG.iml" filepath="$PROJECT_DIR$/O11_SVG/O11_SVG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O12_Media_Queries/O12_Media_Queries.iml" filepath="$PROJECT_DIR$/O12_Media_Queries/O12_Media_Queries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O13_Transition/O13_Transition.iml" filepath="$PROJECT_DIR$/O13_Transition/O13_Transition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O14_Animations/O14_Animations.iml" filepath="$PROJECT_DIR$/O14_Animations/O14_Animations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O15_Animate_css/O15_Animate_css.iml" filepath="$PROJECT_DIR$/O15_Animate_css/O15_Animate_css.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O16_CSS_Frameworks.iml" filepath="$PROJECT_DIR$/O16_CSS_Frameworks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O1_Intro.iml" filepath="$PROJECT_DIR$/O1_Intro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O2_Selectors.iml" filepath="$PROJECT_DIR$/O2_Selectors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O3_Combinators/O3_Combinators.iml" filepath="$PROJECT_DIR$/O3_Combinators/O3_Combinators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O4_Traversing.iml" filepath="$PROJECT_DIR$/O4_Traversing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O5_Cascade.iml" filepath="$PROJECT_DIR$/O5_Cascade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O6_Measurement_Units.iml" filepath="$PROJECT_DIR$/O6_Measurement_Units.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O7_Box_Model.iml" filepath="$PROJECT_DIR$/O7_Box_Model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O8_CSS_Positions.iml" filepath="$PROJECT_DIR$/O8_CSS_Positions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/O9_CSS_Inheritance.iml" filepath="$PROJECT_DIR$/O9_CSS_Inheritance.iml" />
+    </modules>
+  </component>
+</project>

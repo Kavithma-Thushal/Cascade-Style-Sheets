@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model</title>
+    <style>
+
+        h1:first-child{
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+
+        h1:nth-child(3){
+            margin-top: 100px;
+            margin-left: 60px;
+        }
+
+        h1:nth-child(4){
+            margin-left: 360px;
+        }
+
+        div{
+            width: 500px;
+            height: 200px;
+            border: 2px solid purple;
+            margin-left: 60px;
+
+            padding-top: 76px;
+            padding-right: 10px;
+            padding-left: 130px;
+            box-sizing: border-box;
+        }
+
+        div>p{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>I am on the Box</h1>
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur autem blanditiis consequatur
+        corporis debitis doloremque eos hic iusto labore laborum nisi nobis, odio optio perspiciatis placeat sit soluta
+        suscipit!</p>
+</div>
+<h1>I am under the box</h1>
+<h1>I am under the box</h1>
+
+</body>
+</html>

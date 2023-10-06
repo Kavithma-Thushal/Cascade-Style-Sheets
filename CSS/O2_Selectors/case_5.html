@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+
+        p::first-line {
+            color: red;
+        }
+
+        input::placeholder {
+            color: green;
+        }
+
+        li::marker {
+            content: "@";
+            color: green;
+            font-size: 30px;
+        }
+
+        h1::first-letter {
+            font-size: 100px;
+            color: red;
+        }
+
+        p::selection{
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hello There</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam deserunt laudantium optio suscipit
+    vitae. A, alias aut consequuntur dolores ex, excepturi explicabo fuga libero provident ut voluptates voluptatum.
+    Ipsam.</p>
+
+<input type="text" placeholder="Enter Customer Name">
+<h3>Highlight Me</h3>
+
+<br>
+<br>
+<input type="file">
+
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+
+</body>
+</html>
